@@ -1,0 +1,35 @@
+{
+  "name": "token-bucket-rate-limiter-service",
+  "version": "1.0.0",
+  "description": "Token Bucket Rate Limiter Service built with TypeScript and Node.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"No tests configured yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JayantSinghRawat/Token-_Bucket_Rate_Limiter_Service.git"
+  },
+  "keywords": [
+    "typescript",
+    "nodejs",
+    "rate-limiter",
+    "token-bucket"
+  ],
+  "author": "Jayant Singh Rawat",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/JayantSinghRawat/Token-_Bucket_Rate_Limiter_Service/issues"
+  },
+  "homepage": "https://github.com/JayantSinghRawat/Token-_Bucket_Rate_Limiter_Service#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}

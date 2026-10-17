@@ -1,6 +1,8 @@
 import { fixedWindowLimiter } from "./fixedWindowLimiter.js";
+import { SlidingWindowLogLimiter } from "./SlidingWindowLogLimiter.js";
 
-const limiter = new fixedWindowLimiter(3, 4);
+// const limiter = new fixedWindowLimiter(3, 4);
+const limiter = new SlidingWindowLogLimiter(3,4)
 
 // First 3 requests should be allowed
 console.log(limiter.allow("user1" )); // true

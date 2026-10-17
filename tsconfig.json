@@ -14,7 +14,7 @@
     "declarationMap": true,
 
     "strict": true,
-    "noUncheckedIndexedAccess": true,
+    "noUncheckedIndexedAccess": false,
     "exactOptionalPropertyTypes": true,
 
     "verbatimModuleSyntax": true,

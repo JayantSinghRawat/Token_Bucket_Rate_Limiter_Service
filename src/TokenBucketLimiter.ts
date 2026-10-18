@@ -2,7 +2,7 @@ interface Bucket{
     tokens : number;
     lastRefill : number;
 }
-export class TokenBucketLimiter{
+export class tokenBucketLimiter{
     private readonly capacity : number;
     private readonly refillRate : number;
     private readonly bucket : Map< string ,Bucket>;

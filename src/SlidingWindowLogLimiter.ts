@@ -1,4 +1,4 @@
-export class SlidingWindowLogLimiter{
+export class slidingWindowLogLimiter{
     private  limit:number;
     private  windowSeconds : number;
     private  events : Map<string,number[]>;

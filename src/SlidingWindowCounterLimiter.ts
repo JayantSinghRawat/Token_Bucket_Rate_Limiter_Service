@@ -3,7 +3,7 @@ interface State{
     previousCount : number;
     currentCount : number;
 }
-export class SlidingWindowCounterLimiter{
+export class slidingWindowCounterLimiter{
     private readonly limit : number;
     private readonly windowSeconds : number;
     private readonly state : Map<string , State>;

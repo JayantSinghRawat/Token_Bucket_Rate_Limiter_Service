@@ -28,6 +28,7 @@ export class TokenBucketLimiter{
             return false;
         }
 
+        tokens -= cost;
         this.bucket.set(key,{tokens , lastRefill:current});
         return true;
     }

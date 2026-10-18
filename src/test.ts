@@ -1,14 +1,13 @@
-// import { fixedWindowLimiter } from "./fixedWindowLimiter.js";
-// import { slidingWindowLogLimiter } from "./SlidingWindowLogLimiter.js";
-// import { slidingWindowCounterLimiter } from "./SlidingWindowCounterLimiter.js";
-// import { tokenBucketLimiter } from "./TokenBucketLimiter.js";
-
+import { fixedWindowLimiter } from "./fixedWindowLimiter.js";
+import { slidingWindowLogLimiter } from "./SlidingWindowLogLimiter.js";
+import { slidingWindowCounterLimiter } from "./SlidingWindowCounterLimiter.js";
 import { tokenBucketLimiter } from "./TokenBucketLimiter.js";
+import { leakyBucketLimiter } from "./leakyBucketLimiter.js";
 // const limiter = new fixedWindowLimiter(3, 4);
 // const limiter = new SlidingWindowLogLimiter(3,4);
 // const limiter = new SlidingWindowCounterLimiter(3,4)
-const limiter = new tokenBucketLimiter(3,1);
-
+// const limiter = new tokenBucketLimiter(3,1);
+const limiter = new leakyBucketLimiter(3,1);
 
 // First 3 requests should be allowed
 console.log(limiter.allow("user1" )); // true

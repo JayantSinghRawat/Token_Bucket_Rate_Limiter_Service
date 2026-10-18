@@ -10,7 +10,7 @@ export class SlidingWindowLogLimiter{
     }
 
     allow(key:string , now?:number) : boolean{
-        const current = now === undefined  ?Date.now()/1000:now;
+        const current = now === undefined  ?Date.now()/1000.0:now;
         const cutoff = current - this.windowSeconds;
         let timestamps = this.events.get(key);
         if(timestamps === undefined){
